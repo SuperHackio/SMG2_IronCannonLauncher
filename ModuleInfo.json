@@ -1,0 +1,24 @@
+{
+  "Name": "Iron Cannon Ball Shooters",
+  "Author": "Super Hackio",
+  "Description": "The round cannonballs from SMG1",
+  "RequiredAPIs": [ "CannonShell_API" ],
+  "SupportedGames": [ "SB4" ],
+
+  "ModuleData": [
+    {
+      "NameObjFactory": [
+        {
+          "Name": "IronCannonLauncherPoint",
+          "Function": "createExtActor<IronCannonLauncherPoint>",
+          "Include": "IronCannonLauncherPoint.h"
+        },
+        {
+          "Name": "IronCannonLauncher",
+          "Function": "createExtActor<IronCannonLauncher>",
+          "Include": "IronCannonLauncher.h"
+        }
+      ]
+    }
+  ]
+}
